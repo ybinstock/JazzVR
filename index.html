@@ -1,0 +1,40 @@
+<html>
+<head>
+  <script src="https://aframe.io/releases/0.5.0/aframe.min.js"></script>
+  <script src="https://rawgit.com/takahirox/aframe-rain/master/build/aframe-rain.min.js"></script>
+  <script
+    src="https://rawgit.com/ngokevin/aframe-look-at-component/master/dist/aframe-look-at-component.min.js"></script>
+</head>
+<body>
+<a-scene rain fog="type: exponential; color: #000000; density: .2;">
+<!--<a-scene rain>-->
+  <a-assets>
+    <audio id="jazz" src="jazz.mp3" preload="auto"></audio>
+  </a-assets>
+
+  <a-entity position="0 0 10">
+    <a-camera></a-camera>
+  </a-entity>
+
+  <a-image src="img/fortuneteller.jpg" position="-4 3 0" look-at="[camera]"></a-image>
+  <a-image src="img/livemusic.jpg" position="-4 3 -5" look-at="[camera]"></a-image>
+  <a-image src="img/bar.jpg" position="-4 3 -10" look-at="[camera]"></a-image>
+  <a-image src="img/badabing.jpeg" position="-4 3 -15" look-at="[camera]"></a-image>
+  <a-image src="img/nightclub.png" position="-4 3 -20" look-at="[camera]"></a-image>
+  <a-image src="img/motel.jpg" position="-4 3 -25" look-at="[camera]"></a-image>
+
+  <a-image src="img/open.png" position="4 3 4" look-at="[camera]"></a-image>
+  <a-image src="img/karoke.jpg" position="4 3 -7" look-at="[camera]"></a-image>
+  <a-image src="img/girls.jpg" position="4 3 -12" look-at="[camera]"></a-image>
+  <a-image src="img/liveshow.jpg" position="4 3 -17" look-at="[camera]"></a-image>
+  <a-image src="img/jesussaves.jpg" position="4 3 -22" look-at="[camera]"></a-image>
+  <a-image src="img/vacancy.jpg" position="4 3 -27" look-at="[camera]"></a-image>
+
+  <a-sky color="#222"></a-sky>
+  <a-entity light="type:directional;color:#666" position="-10 -10 -10"></a-entity>
+
+  <a-entity sound="src: #jazz; autoplay: true;"></a-entity>
+
+</a-scene>
+</body>
+</html>
