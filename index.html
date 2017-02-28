@@ -6,7 +6,7 @@
     src="https://rawgit.com/ngokevin/aframe-look-at-component/master/dist/aframe-look-at-component.min.js"></script>
 </head>
 <body>
-<a-scene rain fog="type: exponential; color: #000000; density: .2;">
+<a-scene rain="width: 60; height: 60" fog="type: exponential; color: #000000; density: .2;">
 <!--<a-scene rain>-->
   <a-assets>
     <audio id="jazz" src="jazz.mp3" preload="auto"></audio>
@@ -24,11 +24,13 @@
   <a-image src="img/motel.jpg" position="-4 3 -25" look-at="[camera]"></a-image>
 
   <a-image src="img/open.png" position="4 3 4" look-at="[camera]"></a-image>
-  <a-image src="img/karoke.jpg" position="4 3 -7" look-at="[camera]"></a-image>
-  <a-image src="img/girls.jpg" position="4 3 -12" look-at="[camera]"></a-image>
+  <a-image src="img/karoke.jpg" position="4 3 -2" look-at="[camera]"></a-image>
+  <a-image src="img/girls.jpg" position="4 3 -8" look-at="[camera]"></a-image>
   <a-image src="img/liveshow.jpg" position="4 3 -17" look-at="[camera]"></a-image>
   <a-image src="img/jesussaves.jpg" position="4 3 -22" look-at="[camera]"></a-image>
-  <a-image src="img/vacancy.jpg" position="4 3 -27" look-at="[camera]"></a-image>
+  <a-image src="img/vacancy.jpg" position="4 3 -17" look-at="[camera]"></a-image>
+
+ <a-image src="img/brickwall.jpg" position="0 2 -30" width="5" height="2"  material="repeat: 1 2"></a-image>
 
   <a-sky color="#222"></a-sky>
   <a-entity light="type:directional;color:#666" position="-10 -10 -10"></a-entity>
