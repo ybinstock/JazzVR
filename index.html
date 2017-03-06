@@ -7,31 +7,35 @@
 </head>
 <body>
 <a-scene rain="width: 60; height: 60" fog="type: exponential; color: #000000; density: .2;">
-<!--<a-scene rain>-->
+  <!--<a-scene rain>-->
   <a-assets>
     <audio id="jazz" src="jazz.mp3" preload="auto"></audio>
   </a-assets>
 
-  <a-entity position="0 0 10">
-    <a-camera></a-camera>
+  <a-entity position="0 .5 15">
+    <a-camera>
+      <a-animation attribute="position"
+      easing="linear"
+      to="0 .5 -40" dur="40000"></a-animation>
+    </a-camera>
   </a-entity>
 
-  <a-image src="img/fortuneteller.jpg" position="-4 3 0" look-at="[camera]"></a-image>
-  <a-image src="img/livemusic.jpg" position="-4 3 -5" look-at="[camera]"></a-image>
-  <a-image src="img/bar.jpg" position="-4 3 -10" look-at="[camera]"></a-image>
-  <a-image src="img/badabing.jpeg" position="-4 3 -15" look-at="[camera]"></a-image>
-  <a-image src="img/nightclub.png" position="-4 3 -20" look-at="[camera]"></a-image>
-  <a-image src="img/motel.jpg" position="-4 3 -25" look-at="[camera]"></a-image>
+  <a-image src="img/fortuneteller.jpg" position="-3 3 0" look-at="[camera]"></a-image>
 
-  <a-image src="img/open.png" position="4 3 4" look-at="[camera]"></a-image>
-  <a-image src="img/karoke.jpg" position="4 3 -2" look-at="[camera]"></a-image>
-  <a-image src="img/girls.jpg" position="4 3 -8" look-at="[camera]"></a-image>
-  <a-image src="img/liveshow.jpg" position="4 3 -17" look-at="[camera]"></a-image>
-  <a-image src="img/jesussaves.jpg" position="4 3 -22" look-at="[camera]"></a-image>
-  <a-image src="img/vacancy.jpg" position="4 3 -17" look-at="[camera]"></a-image>
+  <a-image src="img/livemusic.jpg" position="-3 3 -5" look-at="[camera]"></a-image>
+  <a-image src="img/bar.jpg" position="-3 3 -10" look-at="[camera]"></a-image>
+  <a-image src="img/badabing.jpeg" position="-3 3 -15" look-at="[camera]"></a-image>
+  <a-image src="img/nightclub.png" position="-3 3 -20" look-at="[camera]"></a-image>
+  <a-image src="img/motel.jpg" position="3 3 -12" look-at="[camera]"></a-image>
 
- <a-image src="img/brickwall.jpg" position="0 2 -30" width="5" height="2"  material="repeat: 1 2"></a-image>
+  <a-image src="img/open.png" position="3 3 4" look-at="[camera]"></a-image>
+  <a-image src="img/karoke.jpg" position="3 3 -2" look-at="[camera]"></a-image>
+  <a-image src="img/girls.jpg" position="3 3 -8" look-at="[camera]"></a-image>
+  <a-image src="img/liveshow.jpg" position="3 3 -17" look-at="[camera]"></a-image>
+  <a-image src="img/jesussaves.jpg" position="3 3 -22" look-at="[camera]"></a-image>
+  <a-image src="img/vacancy.jpg" position="3 3 -17" look-at="[camera]"></a-image>
 
+  <a-image src="img/brickwall.jpg" position="0 2 -30" width="12" height="8" material="repeat: 1 1"></a-image>
   <a-sky color="#222"></a-sky>
   <a-entity light="type:directional;color:#666" position="-10 -10 -10"></a-entity>
 
